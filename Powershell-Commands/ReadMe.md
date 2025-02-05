@@ -3,3 +3,7 @@
 
 ### About /PowerShell-Commands:
 Research, information, notes, and commands about PowerShell. Includes profile aliases, networking, power, device information, etc.
+
+<br/>
+
+<img src="https://github.com/user-attachments/assets/f76d12e9-67a8-490b-99b1-77edd8e03c54" alt="Random image of a meerkat dressed up." title="Random image of a meerkat dressed up." width="300">
