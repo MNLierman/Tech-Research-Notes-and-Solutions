@@ -4,7 +4,7 @@
 <br/>
 
 ### About `/PowerShell-Commands`:
-Research, information, notes, and commands about PowerShell. Includes profile aliases, networking, power, device information, etc.
+Research, information, notes, and commands related to PowerShell. Includes networking, power, device information, profile aliases, etc.
 
 <br/>
 
