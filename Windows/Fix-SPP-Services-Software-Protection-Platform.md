@@ -20,11 +20,11 @@ Alright, let's get started. Keep in mind you are following these instructions at
 
 **Adjust SPP Variables:**
 * Create new DWord called `SuppressRulesEngine` with a value of ``` in `SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\Activation`, `SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`, and `HKU\S-1-5-20\Software\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`. This turns off Rules Engine, but then we need to set our own scheduling, and if we don't change the default values, SPPSvc will freak out.
-* Rename `ActivationInterval` to `ActivationInterval.bak` and create a new DWord called `ActivationInterval` and set it to 12 hours which is the value of `43200000`. This value is in milliseconds, it tells SPPSvc how often it should wake up and check licensing status. It will follow this schedule we set as long as rules engine is turned off., which tells SPPSvc to trigger a restart and check licensing status at this time. Don't change this to longer than 12 hours or you may end up with apps that are partially broken, Office in read-only mode, Windows preventing you from setting a wallpaper or lockscreen. 12 hours is on the upper max end of check in times.
-* Set `NoExpirationUX` to `1`. While rare, it's possible that SPPSvc may fail to restart, this setting will temporarily prevent Windows from making any drastic UI changes due to lapse in licensing check coverage.
-
-**Possibilities:**
-* There is a possibility that SPPSvc will act dead and not do anything, won't restart itself and wont' check in with licensing without restarting the service, in this case, you will need an SPPSvc restart task for Task Scheduler. I will show you what that should look like should your SPPSvc not follow the settings you configured (12 hour check in((.
+* Rename `ActivationInterval` to `ActivationInterval.bak` and create a new DWord called `ActivationInterval` and set it to 12 hours which is the value of `43200000`. This value is in milliseconds, it tells SPPSvc how often it should wake up and check licensing status. It will follow this schedule we set as long as rules engine is turned off. This tells SPPSvc to trigger a restart and check licensing status. Don't change this to longer than 12 hours or you may end up with apps that are partially broken, Office in read-only mode, Windows preventing you from setting a wallpaper or lockscreen. 12 hours is on the upper max end of check in times.
+* Set `NoExpirationUX` to `1`. While rare, it's possible that SPPSvc may fail to restart, this setting will temporarily prevent Windows from making any drastic UI changes due to temporary lapse in licensing check coverage.
+  
+**Troubleshooting:**
+* There is a possibility that SPPSvc will act dead and not do anything, won't restart itself, and won't check in with licensing without something manually restarting the service. If this happens to you, then you will need an SPPSvc restart task for Task Scheduler. I will upload more information about this later on. This page is unfinished.
 
 
 ![image](https://github.com/user-attachments/assets/6ca4bd11-0aac-4263-a100-241599c73fc1)
