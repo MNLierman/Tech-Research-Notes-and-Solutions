@@ -3,16 +3,16 @@
 
 <p></p>
 
-### PROBLEM: Hundreds of `Security-SPP` events in Event Log, which seem to the user to correlate with PC lag, jitter, and general unrespeonsivness.<p></p>
+### PROBLEM: Hundreds of `Security-SPP` events in Event Log, which seem to the user to correlate with PC lag, jitter, and general unresponsiveness.<p></p>
 ### SOLUTION: If SPPSvc has gone out to lunch, then we need to adjust the SPPSvc variables in registry, disable RulesEngine, change the ActivationInterval, and ensure proper permissions.<p></p>
-Alright, let's get started. Keep in mind you are following these instructions at your own risk, and these are also, at this current moment, not finished. Make a backup of your registry. I take zero responibility for what happens from this point forward. If your PC turns into a molten heap of melted plastic and circuit board after applying these changes, that's on you, man.
+Alright, let's get started. Keep in mind you are following these instructions at your own risk, and these are also, at this current moment, not finished. Make a backup of your registry. I take zero responsibility for what happens from this point forward. If your PC turns into a molten heap of melted plastic and circuit board after applying these changes, that's on you, man.
 
 **First, backup SPP registry keys:**
 * Backup `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`, `HKLM\SYSTEM\CurrentControlSet\Services\sppsvc` and `HKEY_USERS\S-1-5-20\Software\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform` before you do anything else. Export them to a folder somewhere, it doesn't matter where.
-* I'd also recommend creating a System Restore point. I used to turn off System Restore, and deamed it a waste of IO and resources. But then I found myself in situations where I wished I had it on, so that I could just roll back the changes, and move on, instead of reinstalling Windows.
+* I'd also recommend creating a System Restore point. I used to turn off System Restore, and deemed it a waste of IO and resources. But then I found myself in situations where I wished I had it on, so that I could just roll back the changes, and move on, instead of reinstalling Windows.
 
 **Modifying Software Protection Platform (SPP) Registry:*** <br/>
-**Fix Permissions:** While the permissions may not necessarily be *broken*, this is part of the process, we want to ensure permisisons are not an issue moving forward. It's been noted elsewhere by Microsoft support that permission issues have historically caused issues. We want to ensure this isn't a problem. Set the following registry permissions:
+**Fix Permissions:** While the permissions may not necessarily be *broken*, this is part of the process, we want to ensure permissions are not an issue moving forward. It's been noted elsewhere by Microsoft support that permission issues have historically caused issues. We want to ensure this isn't a problem. Set the following registry permissions:
   * `NT Service\sppsvc`, `Network Service`, and `SYSTEM` 🠆 Full Control
   * `Local Services` 🠆 Read Only access. Don't set to Full Control, as this allows any service to modify SPP and that's a security risk.
   * `Network Service` should own the registry keys.
