@@ -29,5 +29,9 @@ Alright, let's get started. Keep in mind you are following these instructions at
 <br/>
 
 ### Screenshots - References
-![image](https://github.com/user-attachments/assets/6ca4bd11-0aac-4263-a100-241599c73fc1)
+(Click to enlarge.)<p></p>
+<img src="https://github.com/user-attachments/assets/6ca4bd11-0aac-4263-a100-241599c73fc1" width=600 title="" alt="" />
+
+<img src="https://github.com/user-attachments/assets/b8ba5369-c5e6-4a01-a374-730091acccd4" width=600 title="" alt="" />
+
 
