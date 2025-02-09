@@ -26,6 +26,8 @@ Alright, let's get started. Keep in mind you are following these instructions at
 **Troubleshooting:**
 * There is a possibility that SPPSvc will act dead and not do anything, won't restart itself, and won't check in with licensing without something manually restarting the service. If this happens to you, then you will need an SPPSvc restart task for Task Scheduler. I will upload more information about this later on. This page is unfinished.
 
+<br/>
 
+### Screenshots - References
 ![image](https://github.com/user-attachments/assets/6ca4bd11-0aac-4263-a100-241599c73fc1)
 
