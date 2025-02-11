@@ -1,11 +1,11 @@
-## system restore stages in time required 
+## System Restore Stages and Time Required 
 
 0. Windows logs off and winlogonui takes over, all other services are stopped. It then starts the System Restore service to begin the process. Black screen with white text
-1. System Restore is initializing 
-2. System Restore is restoring the registry 
-3. System Restore is restoring files (sometimes skipped
-Reboot
-Back to lockscreen.
+1. “System Restore is initializing...” 
+2. “System Restore is restoring the registry...” 
+3. “System Restore is restoring files...” (sometimes skipped) <br/>
+– Reboot –<br/>
+4. Back to lockscreen.<br/>
 
 Also, they enabled DPMS (Display Power Management System) during all stages of System Restore, and your monitors will go to sleep after 5-10 min of no mouse movement. When they go off, don't be fooled into thinking Windows is rebooting. 
 
@@ -40,8 +40,11 @@ There really isn't a lot of stages to System Restore. No progress indicators, no
 
 <br/>
 <br/>
+
 ------
-**Additional details:**
+
+<br/>
+## **Additional Details:**
 Doesn't really make a lot of sense, because restoring the registry on a 1,000+MB/s M.2 SSD such as many of our own shop PCs, shouldn't take that long. I promise, and this may sound negative, but I'm kind of getting sick of it, some pieces of Windows are the most inefficient pieces of garbage. They never change, they never update, they don't take advantage of modern performance and technology. You can watch some of these pieces of Windows use one core, 5% of the CPU, and nothing else, and then they take an ungodly amount of time to do so. They aren't multi-threaded, or designed to take advantage of modern systems from the last 15 years. 
 
 
