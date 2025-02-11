@@ -12,7 +12,7 @@ Also, they enabled DPMS (Display Power Management System) during all stages of S
 <p></p>
 
 ## Explanation:
-**Step 1. “System Restore is initializing...”**
+**Step 1. “System Restore is initializing...”** <br/>
 ETA: ~10 - 20 min, max. 
 
 If it takes longer than 30 min and you didn't select a very far away Restore Point, the. it may have hung. Check the HDD activity light. <br/>
@@ -20,7 +20,7 @@ If it takes longer than 30 min and you didn't select a very far away Restore Poi
 <br/>
 <br/>
 
-**Step 2. “System Restore is restoring the registry...”**
+**Step 2. “System Restore is restoring the registry...”**<br/>
 ETA: This takes the longest. ~10-30 min.
 <p></p>
 They may have mashed a bunch of other stuff in there. Who knows, they're such a mess. <br/>
@@ -28,14 +28,16 @@ They may have mashed a bunch of other stuff in there. Who knows, they're such a 
 <br/>
 <br/>
 
-**Step 3. “System Restore is restoring files...”**
+**Step 3. “System Restore is restoring files...”**<br/>
 ETA: ~5-8 min. This was the shortest stage. <br/>
 
 <br/>
 <br/>
 
-**Step 4. Back to the lockscreen.**
-There really isn't a lot of stages to System Restore. No progress indicators, no percentages, it really wouldn't kill them to add these, but they never will. It may seem frozen during certain stages but if the activity light is still flashing, then it's still working.
+**Step 4. Back to the lockscreen.**<br/>
+It reboots twice at the end, then says Updates are underway for about 60 seconds, then it's done. 
+<br/><br/>
+There really isn't a lot of stages to System Restore. No progress indicators, no percentages, it really wouldn't kill them to add these, but they never will. It may seem frozen during certain stages but if the activity light is still flashing, then it's still working. It reboots twice at the end, then says Updates are underway for about 60 seconds, then it's done. 
 
 
 <br/>
