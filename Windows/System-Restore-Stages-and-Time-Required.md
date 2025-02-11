@@ -44,7 +44,9 @@ There really isn't a lot of stages to System Restore. No progress indicators, no
 ------
 
 <br/>
+
 ## **Additional Details:**
+
 Doesn't really make a lot of sense, because restoring the registry on a 1,000+MB/s M.2 SSD such as many of our own shop PCs, shouldn't take that long. I promise, and this may sound negative, but I'm kind of getting sick of it, some pieces of Windows are the most inefficient pieces of garbage. They never change, they never update, they don't take advantage of modern performance and technology. You can watch some of these pieces of Windows use one core, 5% of the CPU, and nothing else, and then they take an ungodly amount of time to do so. They aren't multi-threaded, or designed to take advantage of modern systems from the last 15 years. 
 
 
