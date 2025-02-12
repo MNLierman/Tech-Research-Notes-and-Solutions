@@ -23,7 +23,7 @@ Game Plan:
 6. Report any feedback so that I know what's working and we can better the community and this page with any additional learned information.
 7. Report this issue to Microsoft, and hopefully they will get around to fixing SPPSvc.
 
-<br/
+<br/>
 
 **Phase 1: Fortification – Backing Up Your System**
 
@@ -40,7 +40,7 @@ It's not anticipated that you will run into any issues requiring you to restore 
 
     Simply right-click on each key, select "Export," and save the resulting `.reg` file to a safe location. It doesn't matter where exactly, but choose a folder you'll remember.
 
-3.  **System Restore – Creating an undo button, in case this doesn't work:**
+2.  **System Restore – Creating an undo button, in case this doesn't work:**
 
     Some may dismiss System Restore as a vestige of a bygone era, but that's not the case, it is quite effective. When you end up in a situation where you wish you had a way to restore your PC to yesterday, System Restore does exactly that. If you've disabled System Restore in the past, now's the time to reconsider. Re-enable it if it isn't already, then create a restore point *before* proceeding with the following modifications. 
 
@@ -68,7 +68,7 @@ Now, with our digital defenses in place, we can proceed with the necessary modif
 
     Next, ensure that `Network Service` owns the registry keys by going to Advanced, and clicking Change next to Owner.
 
-3.  **Adjusting SPP Variables**
+2.  **Adjusting SPP Variables**
 
     This is where we take direct control over the SPP's behavior, suppressing the RulesEngine's runaway loops and establishing a more predictable schedule.
 
