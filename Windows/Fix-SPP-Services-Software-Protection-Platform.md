@@ -3,7 +3,7 @@
 
 <p></p>
 
-### PROBLEM: Hundreds of `Security-SPP` events in Event Log, which seem to the user to correlate with PC lag, jitter, and general unresponsiveness.<p></p>
+### PROBLEM: Hundreds of `Security-SPP` events in Event Log, which can also correlate with PC lag, jitter, and general unresponsiveness.<p></p>
 ### SOLUTION: If SPPSvc has gone out to lunch, then we need to adjust the SPPSvc variables in registry, disable RulesEngine, change the ActivationInterval, and ensure proper permissions.<p></p>
 
 Okay, let's polish up the beginning part of your GitHub page, focusing on clarity, completeness, and a touch of humor while maintaining a professional tone.
