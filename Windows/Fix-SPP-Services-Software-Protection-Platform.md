@@ -18,8 +18,9 @@ Alright, with that out of the way, let's get started. Here's how we restore orde
 2. Create a thorough permissions portfolio for SPPSvc, ensuring that permissions aren't an issue now, and won't be in the future.
 3. Make the modifications outlined in this GitHub document.
 4. Monitor the issue and make any necessary follow-up changes, if needed.
-5. Keep your backups, zip them up and save them in your OneDrive or something. If this doesn't work or you need to restore, Windows often doesn't touch much of the registry during upgrades, resets, DISM, or SFC.
+5. Keep your backups, zip them up and save them in your OneDrive or email them to yourself. If this doesn't work or you need to restore them, Windows often doesn't touch much of the registry during upgrades, resets, DISM, or SFC.
 6. Report any feedback so that I know what's working and we can better the community and this page with any additional learned information.
+7. Report this issue to Microsoft, and hopefully they will get around to fixing SPPSvc.
 
 **Phase 1: Fortification – Backing Up Your System**
 
