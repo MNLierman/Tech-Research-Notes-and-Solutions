@@ -12,7 +12,14 @@ Before we begin, let's make one thing crystal clear: *you are embarking on this 
 
 That said, following these instructions carefully should help you get the SPPSvc back under your control.
 
-Alright, with that out of the way, let's get started. Here's how we restore order to the Software Protection Platform Service (SPPSvc) and tame its unruly RulesEngine:
+Alright, with that out of the way, let's get started. Here's how we restore order to the Software Protection Platform Service (SPPSvc). Let's review a quick game plan.
+
+1. Backup the registry keys you will be modifying and create a Restore Point.
+2. Create a thorough permissions portfolio for SPPSvc, ensuring that permissions aren't an issue now, and won't be in the future.
+3. Make the modifications outlined in this GitHub document.
+4. Monitor the issue and make any necessary follow-up changes, if needed.
+5. Keep your backups, zip them up and save them in your OneDrive or something. If this doesn't work or you need to restore, Windows often doesn't touch much of the registry during upgrades, resets, DISM, or SFC.
+6. Report any feedback so that I know what's working and we can better the community and this page with any additional learned information.
 
 **Phase 1: Fortification – Backing Up Your System**
 
