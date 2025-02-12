@@ -14,6 +14,7 @@ That said, following these instructions carefully should help you get the SPPSvc
 
 Alright, with that out of the way, let's get started. Here's how we restore order to the Software Protection Platform Service (SPPSvc). Let's review a quick game plan.
 
+Game Plan:
 1. Backup the registry keys you will be modifying and create a Restore Point.
 2. Create a thorough permissions portfolio for SPPSvc, ensuring that permissions aren't an issue now, and won't be in the future.
 3. Make the modifications outlined in this GitHub document.
@@ -21,6 +22,8 @@ Alright, with that out of the way, let's get started. Here's how we restore orde
 5. Keep your backups, zip them up and save them in your OneDrive or email them to yourself. If this doesn't work or you need to restore them, Windows often doesn't touch much of the registry during upgrades, resets, DISM, or SFC.
 6. Report any feedback so that I know what's working and we can better the community and this page with any additional learned information.
 7. Report this issue to Microsoft, and hopefully they will get around to fixing SPPSvc.
+
+<br/
 
 **Phase 1: Fortification – Backing Up Your System**
 
