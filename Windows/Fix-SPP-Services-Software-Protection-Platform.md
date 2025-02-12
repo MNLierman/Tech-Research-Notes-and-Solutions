@@ -8,7 +8,7 @@
 
 **DISCLAIMER: Proceed with Caution!**
 
-Before we begin, let's make one thing crystal clear: *you are embarking on this journey at your own risk*. These instructions are provided as-is, and while I've done my best to ensure accuracy and safety, unforeseen circumstances can always arise. If you find yourself facing a digital apocalypse – a molten heap of silicon and regret – well, that's on you, friend.
+Before we begin, let's make one thing crystal clear: *you are embarking on this journey at your own risk*. These instructions are provided as-is, and while I've done my best to ensure accuracy and safety, unforeseen circumstances can always arise. **If you find yourself facing a digital apocalypse – a molten heap of silicon and regret – well, that's on you, friend.**
 
 I'm not liable. That said, following these instructions carefully should help you get the SPPSvc back under your control.
 
