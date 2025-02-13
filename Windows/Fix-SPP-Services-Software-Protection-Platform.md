@@ -105,13 +105,17 @@ Now, with our digital defenses in place, we can proceed with the necessary modif
         2.  Then delete the key
         3.  Reboot windows 1-3 times until the key regenerates. This should hopefully force SPPSvc to regenerate all it's licensing information. Make sure you save that registry key via export in case deleting it causes any problems.
 
-**Phase 3: Troubleshooting – Addressing Potential Hiccups**
+**Phase 3: Monitoring & Troubleshooting – Addressing Potential Additional Modifications Needed**
 
-Even with the utmost care, unforeseen issues can sometimes arise. Here's how to address a common problem:
+Even with the utmost care, unforeseen issues can sometimes arise. This section will be expanded to include additional changes meant to handle unique circumstances where the SPPSvc does not quite behave in the expected way. The goal is to bring the service back to normal intended behavior. If additional changes are needed, you will find that described here.
 
 *   **The "Zombie" SPPSvc:**
 
     In some cases, SPPSvc may enter a dormant state, failing to restart itself or check in with licensing unless manually triggered. If you encounter this behavior, you'll need to create a scheduled task to force SPPSvc to restart periodically. *Note: This step will be detailed in a future update to this guide. Check back soon!*
+
+*   **Dynamically Turning Off and On Rules Engine and Actions Module: _(early preview teaser)_**
+
+    It may be necessary in certain situations that we create our own schedule which also dynamically turns off and on the Actions module and RulesEngine. After a certain period of time has elapsed, these are dyanmically turned off unless our next scheduled check-in. *Note: This step will be detailed in a future update to this guide. Check back soon!*
 
     Please note that this page is currently a work in progress. Additional information and troubleshooting tips will be added as they become available.
 
