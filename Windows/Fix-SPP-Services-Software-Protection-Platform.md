@@ -87,11 +87,11 @@ Now, with our digital defenses in place, we can proceed with the necessary modif
         Rename the existing DWORD Value named `ActivationInterval` to `ActivationInterval.bak`. This is a way to keep it around should you need to check the old value.
         Create a new DWORD (32-bit) Value named `ActivationInterval` and set its value to `43200000` (decimal). This value is in milliseconds and represents 12 hours. It instructs SPPSvc how often to "wake up," check its licensing status, and trigger a service restart. As long as the RulesEngine is suppressed, SPPSvc will adhere to a rough version of this schedule. Rough meaning, it's programmed to add a time delay to actions so as a best practice standard, the concept being, that if all services do this, then there shouldn't ever be one specific time that your device freezes or grinds to a halt because of a bunch of tasks occuring all at once.
 
-        *IMPORTANT: Do not set this value to a duration longer than 12 hours. Doing so may result in applications like Office or Store apps entering read-only mode and Windows preventing you from customizing your settings. 12 hours represents the upper limit for reliable license check-in times.*
+        *IMPORTANT: Do not set `ActivationInterval` to a value longer than 12 hours. Doing so may result in applications like Office or Store apps entering read-only mode and Windows preventing you from customizing your settings. 12 hours represents the upper limit for reliable license check-in times.*
 
     *   **Disable Error Control**
 
-        Rename `ErrorControl` and `FailureActions` and add a `1` or a `z` at the end of their names, so that they read as `ErrorControl1`, etc. This prevents Windows Services Control Manager from attemptinng to continually restart SPP when it's not necessary.
+        Rename `ErrorControl` and `FailureActions` and add a `1` or a `z` at the end of their names, so that they read as `ErrorControl1`, etc. This prevents Windows Services Control Manager from attempting to continually restart SPP when it's not necessary.
 
     *   **Prevent UI Disruptions:**
 
