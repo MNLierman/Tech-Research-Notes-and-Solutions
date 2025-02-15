@@ -169,7 +169,7 @@ Essentially, it's believed that the way SPPSvc is suppose to calculate the next 
 
 **Q: Why is the "RulesEngine" cycle problematic? What tangible issues does it cause?**
 
-**A:** The SPP's RulesEngine is designed to validate your Microsoft licenses against a series of predefined rules. It is designed to trigger as needed. However, when the service becomes entrapped within this bug cycle, it triggers rescans repeatedly. Each scan iterates through your local file system and registry, consuming considerable system resources: CPU cycles, disk I/O, and memory.
+**A:** The SPP's RulesEngine is designed to validate your Microsoft licenses against a series of predefined rules. It is designed to trigger as needed. However, when the service becomes entrapped within this bug cycle, it triggers rescans repeatedly. Each scan iterates through your local file system and registry, consuming considerable system resources: CPU cycles, disk I/O, and memory. You often won't see the CPU spike in SPPSvc itself, as it uses kernel-mode code in-memory to protect Microsoft genuine product key algorithms which could otherwise be reverse engineered if SPP conducted this work in user-space where the process could be dumped and examined.
 
 The end result of this activity are a degradation in system responsiveness, and a mess of your Application Event Log. Applications may run slowly, or this repetitive process loop could interrupt background operations, or starve other important tasks from system resources. For users with older hardware, or systems already running close to their resource limits, this RulesEngine loop would definitely be noticeable, hence why many on forums and Reddit are complaining about this.
 
