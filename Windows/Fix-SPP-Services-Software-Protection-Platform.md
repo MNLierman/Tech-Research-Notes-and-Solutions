@@ -159,7 +159,7 @@ So, while the precise extent of SPP's reach remains an area ripe for further exp
 
 **Q: What's the significance of the "100 years" rescheduling behavior?**
 
-**A:** Ah, the riddle of the century! This has baffled many a Windows enthusiast, it seems. I, too, have puzzled over the significance of this recurring rescheduling to dates nearly a century into the future. While some have speculated that 100 years represents the maximum allowable scheduling horizon within Task Scheduler, empirical evidence quickly dispels this notion; you can readily schedule tasks further out than that.
+**A:** Ah, the riddle of the century! This has baffled many across the internet, it seems. I, too, have puzzled over the significance of this recurring rescheduling to dates nearly a century into the future. While some have speculated that 100 years represents the maximum allowable scheduling horizon within Task Scheduler, empirical evidence quickly dispels this notion; you can readily schedule tasks further out than that.
 
 My initial thought was, could this be an accidental bug within SPPSvc and its modules – a coding oversight where a developer inadvertently hardcoded the "21" prefix for the 4 digit year instead of "20" (ie. 21xx vs 20xx)?
 
