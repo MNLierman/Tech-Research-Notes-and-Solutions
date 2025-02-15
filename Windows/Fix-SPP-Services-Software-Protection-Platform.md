@@ -115,7 +115,7 @@ Even with the utmost care, unforeseen issues can sometimes arise. This section w
 
 *   **Dynamically Turning Off and On Rules Engine and Actions Module: _(early preview teaser)_**
 
-    It may be necessary in certain situations that we got a step further and create a dynamic Task Scheduler profile which follows our own custom set of rules to turn off and on the Actions module and RulesEngine. After a certain period of time has elapsed, SPPSvc and certain modules can be turned off until our next scheduled check-in. *Note: This step will be detailed in a future update to this guide. Check back soon!*
+    It may be necessary in certain situations that we go a step further and create a dynamic Task Scheduler profile which follows our own custom set of rules to turn on and off SPP modules, such as the Actions module and RulesEngine. After a certain period of time has elapsed, SPPSvc and certain modules can then be turned off until our next scheduled check-in. *Note: This step will be detailed in a future update to this guide. Check back soon!*
 
     Please note that this page is currently a work in progress. Additional information and troubleshooting tips will be added as they become available.
 
