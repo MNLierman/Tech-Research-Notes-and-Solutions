@@ -10,7 +10,7 @@
 
 Before we begin, let's make one thing crystal clear: *you are embarking on this journey at your own risk*. These instructions are provided as-is, and while I've done my best to ensure accuracy and safety, unforeseen circumstances can always arise. **If you find yourself facing a digital apocalypse – and your PC becomes a molten heap of silicon and regret – well, that's on you, friend.** I'm not liable.
 
-That said, following these instructions carefully should help you get the SPPSvc back under your control.
+That said, following these instructions carefully should help you regain normal function of the SPP service. 
 
 Alright, with that out of the way, let's get started. Here's how we restore order to the Software Protection Platform Service (SPPSvc). Let's review a quick game plan.
 
