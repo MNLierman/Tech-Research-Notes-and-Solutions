@@ -10,10 +10,10 @@
 
 **1. Optimizing Applications for RAM Usage**
    * **Potential Benefits:**
-     * If one is willing to individually review each application thoruoughly and inspect the settings for RAM saving options, as well as disabling startup items, this can definitely be a huge benefit. Eg. Edge RAM controls helps ensure that even with a lot of tabs open, resources are not used much above the desired level.
+     * If one is willing to individually review each application thoroughly and inspect the settings for RAM saving options, as well as disabling startup items, this can definitely be a huge benefit. Eg. Edge RAM controls helps ensure that even with a lot of tabs open, resources are not used much above the desired level.
    * **Considerations:**
      * Don't set RAM controls too low. Depends on how many tabs and windows you expect to keep open.
-     * Eg. In Edge, setting the RAM controls too low can negatively impact performance, as the cached files and data is immedietely discarded, causing the system to have to pick it back up again on the next open tab. DNS resolution speeds and website load times could be slower.
+     * Eg. In Edge, setting the RAM controls too low can negatively impact performance, as the cached files and data is immediately discarded, causing the system to have to pick it back up again on the next open tab. DNS resolution speeds and website load times could be slower.
     
 **2. Startup and Process Tweaks (e.g., Windows Server Approach):**
 
@@ -25,13 +25,13 @@ Windows Server Approach: Disallow startup processes except for services. Startup
      * Improved system responsiveness.
    * **Considerations:**
      * Some startup apps are required for certain functions, it's important that these are encapsulated into an alternative startup mode.
-     * Keep in mind: The server version of windows is designed for a different use case case.
+     * Keep in mind: The server version of windows is designed for a different use case.
 
 **3. Combining Svchost Processes into Groups:**
    * **Potential Benefits:**
      * Reduced overhead by combining `svchost` processes into groups.
    * **Considerations:**
-     * Could decrease stablity; while this is unlikely in most cases, an unexpected unhandled crash in one service *could* crash the entire group. However, Windows 11 has great error handling within services.
+     * Could decrease stability; while this is unlikely in most cases, an unexpected unhandled crash in one service *could* crash the entire group. However, Windows 11 has great error handling within services.
 
 **4. Combining Single-Service Svchost Groups:**
    * **Potential Benefits:**
@@ -81,7 +81,7 @@ Windows Server Approach: Disallow startup processes except for services. Startup
     * Document every tweak and change.
     * This will be invaluable for troubleshooting and reverting changes.
 * **Backup:**
-    * Create regular system backups. System Restore can be a valulable asset.
+    * Create regular system backups. System Restore can be a valuable asset.
     * Have a recovery plan in case of unexpected issues.
 * **Incremental Changes:**
     * Implement tweaks incrementally.
