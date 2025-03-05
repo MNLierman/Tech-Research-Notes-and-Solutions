@@ -4,7 +4,9 @@
 <br/>
 
 ## My Feedback Regarding: Microsoft's Article “Guidance on disabling system services on Windows IoT Enterprise”
-([Article Link]([url](https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/optimize/services)))
+
+([Article Link](https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/optimize/services))
+
 This is a great guide and I appreciate the docuemtnation efforts by Microsoft. However, despite only disabling services that are notated as safe to disable, DISM stopped working on the device, and required a complete services reset. The following is my feedback to Microsoft:
 
 “This guide is a GREAT start, and I must commend the authors and managers for approving or initiating this effort. It’s refreshing to see Microsoft provide clear documentation - a much-needed resource compared to guides from third parties.
