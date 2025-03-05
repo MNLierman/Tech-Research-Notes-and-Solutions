@@ -1,5 +1,5 @@
 ## Supplemental Research Notes for Experimental Windows Performance Tweaks
-#### ⚠️ Be Cautious! These are bleeding edge undocumented (except here) and only breifly tested modifications. These changes may very well break Windows. Modifications should be, ideally, tested in isolated VMs to avoid making multiple **_experimental_** tweaks and not knowing which one caused an issue. Simple actions like deleting a registry key/value or creating an incorrect one can render the OS unbootable or prevent login.
+#### ⚠️ Be Cautious! These are bleeding edge undocumented (except here) and only briefly tested modifications. These changes may very well break Windows. Modifications should be, ideally, tested in isolated VMs to avoid making multiple **_experimental_** tweaks and not knowing which one caused an issue. Simple actions like deleting a registry key/value or creating an incorrect one can render the OS unbootable or prevent login.
 
 The performance gains from these experimental changes are uncertain. However, this effort aims to lower resource and RAM usage for unsupported hardware like “beater laptops” – a term we use at my IT shop to mean *old, but functional laptops meant for basic use cases* like speed tests, wifi checks, and cabling tests checks. While Linux is an option for these types of laptops, many tools or vendor test suites require Windows.
 
