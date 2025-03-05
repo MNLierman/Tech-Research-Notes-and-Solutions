@@ -1,5 +1,5 @@
 ## Research Notes About Snipping Tool - Crashing, Errors, and Overall Snipping Tool Not Working
-#### I was going to merge these notes into another one but opted to keep this separate. A blog post will go up about this shortly. However, essentially, snipping tool is one of the most finicky and most error prone of the Microsoft apps that I've ever experienced. 
+#### I was going to merge these notes into another one but opted to keep this separate. A blog post will go up about this shortly. However, essentially, Snipping Tool is one of the most finicky and most error prone of all the Microsoft apps that I've ever experienced. 
 
 <br/>
 
