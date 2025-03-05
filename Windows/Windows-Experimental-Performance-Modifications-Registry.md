@@ -19,3 +19,25 @@ Highly experimental modification which merges PenService into Bluetooth App Svch
 Another highly experimental change which merges WcmSvc into the main LocalServiceNetworkRestricted group, I see no sense in breaking it out, it barely does anything anyways.
 
 `reg add "HKLM\SYSTEM\ControlSet001\Services\Wcmsvc" /v ImagePath /t REG_EXPAND_SZ /d "%SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p" /f`
+
+<br/>
+
+## Removing Service Dependencies to Disable Certain Services
+
+Some service dependencies don't make a lot of sense. Removing their dependencies from each other allows them to operate, or be disabled, without affecting the others. 
+
+**The case of `WinHttpAutoProxySvc`:**
+
+A very strange bunch of services. This likely stems from the early IPv6 transitioning days during Vista/7 when IPv6 tunneling was almost mandatory, as most ISPs didn't launch IPv6 until around 2011. Since then, IPv6 tunnels have been massively abused and are now either shut down or barely functional, and using them often gives the user the frustrating experience of captchas everywhere, including for every web search on Google or Bing; many services outright block tunnels now.
+
+Disabling any of these services, like IPv6 tunneling, will likely cause Windows Connection Manager to disable all network devices within 30 seconds due to service failure. Yet another case where Windows provides no worthwhile error messages. Troubleshooting this initially sent me on a wild goose chase of corruption and in-place upgrades, as DISM claimed it found corruption in CBS Preview system app with files containing the terms `network` and `wifi` UI XAML files. This issue was merely due to Microsoft devs overlooking missing language files within an Insider preview version of a system app.
+
+`powershell.exe -Command "Set-ItemProperty -Path 'HKLM:\SYSTEM\ControlSet001\Services\iphlpsvc' -Name 'DependOnService' -Value @('RpcSs', 'tcpip', 'nsi') -Type MultiString"`
+
+`powershell.exe -Command "Set-ItemProperty -Path 'HKLM:\SYSTEM\ControlSet001\Services\Wcmsvc' -Name 'DependOnService' -Value @('RpcSs', 'NSI') -Type MultiString"`
+
+`powershell.exe -Command "Set-ItemProperty -Path 'HKLM:\SYSTEM\ControlSet001\Services\NcaSvc' -Name 'DependOnService' -Value @('BFE', 'dnscache', 'NSI') -Type MultiString"`
+
+`sc config iphlpsvc start= disabled`
+`sc config WinHttpAutoProxySvc start= disabled`
+
