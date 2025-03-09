@@ -1,5 +1,5 @@
 ## Research Notes and Descriptions of Windows Services
-#### Most guides and articles posted online regurgitate the same info that Microsoft provides. We investigate the true purpose of each Windows Service. Ultimately, our goal is to disable services and features that are not in use and the user (you) don't intend on using. Doing so decreases the attack surface, and frees up system resources.
+#### Most guides and articles posted online regurgitate the same info that Microsoft provides. We investigate the true purpose of each Windows Service. Ultimately, our goal is to disable services for unneeded features – services the user (you) doesn't intend on needing. Doing so decreases the attack surface, and frees up system resources.
 
 #### >> This GitHub page is a WIP, as are most our resources we are uploading to GitHub. Our strategy is 1 is greater than 0; part of this concept is accepting that nothing is perfect, a published WIP is better than something collecting dust.
 
